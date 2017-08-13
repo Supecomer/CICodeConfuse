@@ -17,7 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self test1Confuse];
 }
+
+
+- (void)test1Confuse
+{
+    NSLog(@"不要替换我----%@",NSStringFromSelector(_cmd));
+}
+
 
 
 - (void)didReceiveMemoryWarning {
